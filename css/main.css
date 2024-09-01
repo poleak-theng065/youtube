@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* header */
+header{
+    height: 10vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+header *{
+    height: 100%;
+    display: flex;
+}
+.left{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.left i{
+    padding: 60px 0 0 15px;
+}
+.left img{
+    height: 100px;
+}
+.center{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    height: 50px;
+    width: 600px;
+    border-radius: 45px;
+    border: 1px solid rgba(210, 207, 207, 0.826);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center input{
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 550px;
+    padding-left: 10px;
+}
+.center button{
+    background: rgba(210, 207, 207, 0.826);
+    border: none;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding-left: 10px;
+    height: 50px;
+    width: 70px;
+    border-left: 2px solid rgba(210, 207, 207, 0.826);;
+}
+.center button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center .mic{
+    background: rgba(210, 207, 207, 0.826);
+    height: 50px;
+    width: 50px;
+    border-radius: 45px;
+    border: 1px solid rgba(210, 207, 207, 0.826);;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right i{
+    padding: 60px 15px 0 15px;
+}
+.right img{
+    height: 50px;
+    border-radius: 45px;
+    margin-right: 15px;
+}
+/* Mian */
+.main-contener{
+    flex: 6;
+    display: flex;
+}
+/* side bar */
+aside{
+    flex: 1;
+    height: 90vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+aside div , aside h2{
+    margin-left: 10px;
+}
+.function1{
+    padding-left: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.function1:hover{
+    background: rgb(204, 202, 202);
+    width: 221px;
+    height: 40px;
+    border-radius: 10px;
+}
+.function1 img{
+    width: 25px;
+    height: 25px;
+}
+.profile{
+    border-radius: 50%;
+}
+.function1 p{
+    margin-left: 10px;
+    margin-top: 7px;
+    font-size: 18px;
+}
+aside p{
+    font-size: 14px;
+    margin-left: 10px;
+}
+aside h2{
+    font-size: 18px;
+}
+/* vdo place */
+main{
+    flex: 6;
+    height: 90vh;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+}
+/* section with type */
+section{
+    height: 5vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+section button{
+    margin: 0 5px 0 5px;
+    height: 3vh;
+    background: rgba(211, 208, 208, 0.76);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+/* place vdo */
+.container{
+    background: rgb(255, 255, 255);
+    flex: 8;
+    height: 87vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0 10px 0;
+    gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.container .vdo{
+    background: rgba(185, 185, 185, 0.24);
+    border-radius: 10px;
+    height:300px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.container iframe{
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container .tamnail{
+    display: flex;
+}
+.container .tamnail img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px 10px 0 10px;
+}
+.container .tamnail .title{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.container .tamnail .title .channel{
+    color: rgb(121, 120, 120);
+}
